@@ -1,0 +1,77 @@
+add_newline = true
+format = """
+[┌ ](fg:#87CEFA)\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$nodejs\
+$rust\
+$golang\
+$php\
+$lua\
+$python\
+$lien_break
+[└─>](fg:#87CEFA)
+"""
+
+[line_break]
+disabled = true
+
+[directory]
+style = "fg:#87CEFA"
+format = "[$path]($style)"
+truncation_length = 0
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Retroarch" = "󱎓"
+"Android" = ""
+
+[git_branch]
+symbol = ":: "
+style = "fg:#f1502f"
+format = '[[ $symbol $branch ](fg:#f1502f)]($style)'
+
+[git_status]
+style = "fg:#f1502f"
+format = "[[$all_status$ahead_behind](fg:#f1502f)]($style)"
+
+[fill]
+symbol = " "
+
+[nodejs]
+symbol = " "
+style = "fg:#6ca35e"
+format = "[${symbol} NodeJS ($version)]($style)"
+
+[rust]
+symbol = " "
+style = "fg:#6ca35e"
+format = "[$symbol Rust ($version)]($style)"
+
+[golang]
+symbol = " "
+style = "fg:#6ca35e"
+format = "[$symbol Go ($version)]($style)"
+
+[php]
+symbol = " "
+style = "fg:#6ca35e"
+format = "[$symbol PHP ($version)]($style)"
+
+[lua]
+symbol = " 󰢱"
+style = "fg:6ca35e"
+format = "[$symbol Lua ($version )]($style)"
+
+[python]
+symbol = " 󰌠"
+style = "fg:6ca35e"
+format = "[$symbol Python ($version )]($style)"
+
+

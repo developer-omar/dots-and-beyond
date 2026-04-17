@@ -1,0 +1,26 @@
+layout {
+  cwd "~/Projects/"
+  default_tab_template {
+    pane size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+    children
+    // pane size=1 borderless=true {
+    //     plugin location="zellij:status-bar"
+    // }
+  }
+
+  tab name="Nvim Config" cwd="~/Projects/nvim-setup/" {
+    // pane split_direction="horizontal"{
+    //   pane {
+    //   }
+    //   pane {
+    //   }
+    // }
+
+  }
+
+  tab name="IDE" focus=true {
+
+  }
+}
