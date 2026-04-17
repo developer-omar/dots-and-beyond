@@ -2,7 +2,7 @@
 
 # --- CONFIGURATIONS ---
 # Path to the user.js
-# It is because I run the script with ./scripts/run.sh
+# It is because I run the script with ./scripts/run.sh due to pwd
 FILE_USERJS="configs/user.js"
 # ---------------------
 
